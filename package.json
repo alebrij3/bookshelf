@@ -7,7 +7,11 @@
   "author": "Alex <ajf@fastmail.com>",
   "license": "MIT",
   "dependencies": {
+    "core-js": "^3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
   }
 }
