@@ -30,7 +30,7 @@ class Book {
 
 const book1 = new Book("De cero a uno","Peter Thiel","Audiobook","21/04/2020","24/04/2020","Lorem Ipsum","Business",['startups','entrepreneurship','business','technology'],"6h 13m")
 
-const book2 = new Book("De cero a uno","Peter Thiel","Audiobook","21/04/2020","24/04/2020","Lorem Ipsum","Business",['startups','entrepreneurship','business','technology'],"6h 13m")
+const book2 = new Book("Shoe Dog","Phil Knight","Audiobook","21/04/2020","24/04/2020","Lorem Ipsum","Business",['startups','entrepreneurship','business','technology'],"6h 13m")
 
 const book3 = new Book("De cero a uno","Peter Thiel","Audiobook","21/04/2020","24/04/2020","Lorem Ipsum","Business",['startups','entrepreneurship','business','technology'],"6h 13m")
 
