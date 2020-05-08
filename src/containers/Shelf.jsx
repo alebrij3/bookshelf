@@ -1,11 +1,16 @@
 import React from 'react';
+import Book from '../components/Book';
 
 class Shelf extends React.Component {
   render() {
     const { nowReading, read, wantToRead } = this.props;
-    console.log(nowReading)
     return (
-      <h2>Hi</h2>
+      <div>
+        <h2>Now Reading:</h2>
+        {nowReading.map(item =>
+          <Book key={item.id} {...item} />
+        )}
+      </div>
     );
   }
 }

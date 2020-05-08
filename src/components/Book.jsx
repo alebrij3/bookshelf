@@ -3,13 +3,15 @@ import bookCover from '../assets/static/img/de-cero-a-uno.jpg';
 
 class Book extends React.Component {
   render() {
+    const { title, author, format } = this.props;
+    console.log(title)
     return (
       <article>
         <img src={bookCover} />
-        <h2>Título</h2>
-        <p>Autor</p>
+        <h3>{title}</h3>
+        <p>{author}</p>
         <ul>
-          <li>Formato:</li>
+          <li>Formato: {format}</li>
           <li>Fecha Inicio:</li>
           <li>Fecha Fin:</li>
           <li>Resumen:</li>
