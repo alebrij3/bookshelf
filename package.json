@@ -2,7 +2,16 @@
   "name": "bookshelf",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel public/index.html"
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html"
+  },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "src/assets/static/img",
+        "staticOutDir": "assets/static/img"
+      }
+    ]
   },
   "description": "reading, read, wnt to read",
   "main": "src/index.js",
@@ -15,6 +24,7 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.3.1"
   }
 }
