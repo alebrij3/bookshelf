@@ -30,18 +30,4 @@ class Book extends React.Component {
   }
 }
 
-/* class Bookk {
-  constructor(title, author, format, startDate, finishDate, excerpt, category, tags, duration) {
-    this.title = title;
-    this.author = author;
-    this.format = format;
-    this.startDate = startDate;
-    this.finishDate = finishDate;
-    this.excerpt = excerpt;
-    this.category = category;
-    this.tags = tags;
-    this.duration = duration;
-  }
-} */
-
 export default Book;
