@@ -1,13 +1,12 @@
 import React from 'react';
-import bookCover from '../assets/static/img/de-cero-a-uno.jpg';
 
 class Book extends React.Component {
   render() {
-    const { title, author, format, dateStart, dateEnd, excerpt, category, tags, duration } = this.props;
+    const { cover, title, author, format, dateStart, dateEnd, excerpt, category, tags, duration } = this.props;
     console.log(title)
     return (
       <article>
-        <img src={bookCover} />
+        <img src={cover} />
         <h3>{title}</h3>
         <p>{author}</p>
         <ul>
