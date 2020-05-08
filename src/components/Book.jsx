@@ -2,10 +2,6 @@ import React from 'react';
 import bookCover from '../assets/static/img/de-cero-a-uno.jpg';
 
 class Book extends React.Component {
-  constructor(props) {
-    super(props);
-    console.log(props);
-  }
   render() {
     return (
       <article>
