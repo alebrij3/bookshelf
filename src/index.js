@@ -1,21 +1,173 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Book from './components/Book';
+import Shelf from './containers/Shelf';
 
-ReactDOM.render(
-  <Book />, document.getElementById('root')
-);
+/* const shoeDog = {
+  "id": 1,
+  "title": "Shoe Dog",
+  "author": "Phil Knight",
+  "format": "Audiobook",
+  "dateStart": "21/04/2020",
+  "dateEnd": "24/04/2020",
+  "excerpt": "Lorem Ipsum",
+  "category": "Business",
+  "tags": ['startups','entrepreneurship','business','technology'],
+  "duration": "10h 25m"
+}; */
+
 const initialState = {
-  "nowReading": [],
-  "read": [],
-  "wantToRead": []
+  "nowReading": [
+    {
+      "id": 1,
+      "title": "Shoe Dog",
+      "author": "Phil Knight",
+      "format": "Audiobook",
+      "dateStart": "21/04/2020",
+      "dateEnd": "24/04/2020",
+      "excerpt": "Lorem Ipsum",
+      "category": "Business",
+      "tags": ['startups','entrepreneurship','business','technology'],
+      "duration": "10h 25m"
+    },
+    {
+      "id": 1,
+      "title": "De cero a uno",
+      "author": "Peter Thiel",
+      "format": "Audiobook",
+      "dateStart": "21/04/2020",
+      "dateEnd": "24/04/2020",
+      "excerpt": "Lorem Ipsum",
+      "category": "Business",
+      "tags": ['startups','entrepreneurship','business','technology'],
+      "duration": "10h 25m"
+    },
+    {
+      "id": 1,
+      "title": "De cero a uno",
+      "author": "Peter Thiel",
+      "format": "Audiobook",
+      "dateStart": "21/04/2020",
+      "dateEnd": "24/04/2020",
+      "excerpt": "Lorem Ipsum",
+      "category": "Business",
+      "tags": ['startups','entrepreneurship','business','technology'],
+      "duration": "10h 25m"
+    },
+  ],
+  "read": [
+    {
+      "id": 1,
+      "title": "De cero a uno",
+      "author": "Peter Thiel",
+      "format": "Audiobook",
+      "dateStart": "21/04/2020",
+      "dateEnd": "24/04/2020",
+      "excerpt": "Lorem Ipsum",
+      "category": "Business",
+      "tags": ['startups','entrepreneurship','business','technology'],
+      "duration": "10h 25m"
+    },
+    {
+      "id": 1,
+      "title": "De cero a uno",
+      "author": "Peter Thiel",
+      "format": "Audiobook",
+      "dateStart": "21/04/2020",
+      "dateEnd": "24/04/2020",
+      "excerpt": "Lorem Ipsum",
+      "category": "Business",
+      "tags": ['startups','entrepreneurship','business','technology'],
+      "duration": "10h 25m"
+    },
+    {
+      "id": 1,
+      "title": "De cero a uno",
+      "author": "Peter Thiel",
+      "format": "Audiobook",
+      "dateStart": "21/04/2020",
+      "dateEnd": "24/04/2020",
+      "excerpt": "Lorem Ipsum",
+      "category": "Business",
+      "tags": ['startups','entrepreneurship','business','technology'],
+      "duration": "10h 25m"
+    },
+    {
+      "id": 1,
+      "title": "De cero a uno",
+      "author": "Peter Thiel",
+      "format": "Audiobook",
+      "dateStart": "21/04/2020",
+      "dateEnd": "24/04/2020",
+      "excerpt": "Lorem Ipsum",
+      "category": "Business",
+      "tags": ['startups','entrepreneurship','business','technology'],
+      "duration": "10h 25m"
+    },
+  ],
+  "wantToRead": [
+    {
+      "id": 1,
+      "title": "De cero a uno",
+      "author": "Peter Thiel",
+      "format": "Audiobook",
+      "dateStart": "21/04/2020",
+      "dateEnd": "24/04/2020",
+      "excerpt": "Lorem Ipsum",
+      "category": "Business",
+      "tags": ['startups','entrepreneurship','business','technology'],
+      "duration": "10h 25m"
+    },
+    {
+      "id": 1,
+      "title": "De cero a uno",
+      "author": "Peter Thiel",
+      "format": "Audiobook",
+      "dateStart": "21/04/2020",
+      "dateEnd": "24/04/2020",
+      "excerpt": "Lorem Ipsum",
+      "category": "Business",
+      "tags": ['startups','entrepreneurship','business','technology'],
+      "duration": "10h 25m"
+    },
+    {
+      "id": 1,
+      "title": "De cero a uno",
+      "author": "Peter Thiel",
+      "format": "Audiobook",
+      "dateStart": "21/04/2020",
+      "dateEnd": "24/04/2020",
+      "excerpt": "Lorem Ipsum",
+      "category": "Business",
+      "tags": ['startups','entrepreneurship','business','technology'],
+      "duration": "10h 25m"
+    },
+    {
+      "id": 1,
+      "title": "De cero a uno",
+      "author": "Peter Thiel",
+      "format": "Audiobook",
+      "dateStart": "21/04/2020",
+      "dateEnd": "24/04/2020",
+      "excerpt": "Lorem Ipsum",
+      "category": "Business",
+      "tags": ['startups','entrepreneurship','business','technology'],
+      "duration": "10h 25m"
+    },
+    {
+      "id": 1,
+      "title": "De cero a uno",
+      "author": "Peter Thiel",
+      "format": "Audiobook",
+      "dateStart": "21/04/2020",
+      "dateEnd": "24/04/2020",
+      "excerpt": "Lorem Ipsum",
+      "category": "Business",
+      "tags": ['startups','entrepreneurship','business','technology'],
+      "duration": "10h 25m"
+    },
+  ]
 }
 
-
-const book1 = new Bookk("De cero a uno","Peter Thiel","Audiobook","21/04/2020","24/04/2020","Lorem Ipsum","Business",['startups','entrepreneurship','business','technology'],"6h 13m")
-
-const book2 = new Bookk("Shoe Dog","Phil Knight","Audiobook","21/04/2020","24/04/2020","Lorem Ipsum","Business",['startups','entrepreneurship','business','technology'],"10h 25m")
-
-const book3 = new Bookk("Mariposa","Yusra Mardini","Audiobook","21/04/2020","24/04/2020","Lorem Ipsum","Biography",['immigration','refugee','travel','swimming'],"380p")
-
-console.log(book1);
+ReactDOM.render(
+  <Shelf {...initialState} />, document.getElementById('root')
+);
