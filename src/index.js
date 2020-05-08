@@ -6,6 +6,7 @@ const initialState = {
   "nowReading": [
     {
       "id": 1,
+      "cover": "../assets/static/img/criptonomicon.jpg",
       "title": "Shoe Dog",
       "author": "Phil Knight",
       "format": "Audiobook",
