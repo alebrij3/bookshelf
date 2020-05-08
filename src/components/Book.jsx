@@ -3,7 +3,7 @@ import bookCover from '../assets/static/img/de-cero-a-uno.jpg';
 
 class Book extends React.Component {
   render() {
-    const { title, author, format } = this.props;
+    const { title, author, format, dateStart, dateEnd, excerpt, category, tags, duration } = this.props;
     console.log(title)
     return (
       <article>
@@ -12,18 +12,18 @@ class Book extends React.Component {
         <p>{author}</p>
         <ul>
           <li>Formato: {format}</li>
-          <li>Fecha Inicio:</li>
-          <li>Fecha Fin:</li>
-          <li>Resumen:</li>
-          <li>Categoría</li>
+          <li>Fecha Inicio: {dateStart}</li>
+          <li>Fecha Fin: {dateEnd}</li>
+          <li>Resumen: {excerpt}</li>
+          <li>Categoría: {category}</li>
           <li>Etiquetas:
             <ul>
-              <li>etiqueta 1</li>
-              <li>etiqueta 2</li>
-              <li>etiqueta 3</li>
+              {tags.map(tag =>
+                <li>{tag}</li>  
+              )}
             </ul>
           </li>
-          <li>Duración:</li>
+          <li>{duration}</li>
         </ul>
       </article>
     );
