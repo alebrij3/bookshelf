@@ -6,7 +6,7 @@ const initialState = {
   "nowReading": [
     {
       "id": 1,
-      "cover": "../assets/static/img/criptonomicon.jpg",
+      "cover": "../assets/static/img/shoe-dog.jpg",
       "title": "Shoe Dog",
       "author": "Phil Knight",
       "format": "Audiobook",
@@ -19,6 +19,7 @@ const initialState = {
     },
     {
       "id": 1,
+      "cover": "../assets/static/img/de-cero-a-uno.jpg",
       "title": "De cero a uno",
       "author": "Peter Thiel",
       "format": "Audiobook",
@@ -31,8 +32,8 @@ const initialState = {
     },
     {
       "id": 1,
-      "title": "De cero a uno",
-      "author": "Peter Thiel",
+      "title": "El hombre en busca de sentido",
+      "author": "Viktor Frankl",
       "format": "Audiobook",
       "dateStart": "21/04/2020",
       "dateEnd": "24/04/2020",
