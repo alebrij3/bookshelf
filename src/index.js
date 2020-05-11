@@ -96,8 +96,8 @@ const initialState = {
   "wantToRead": [
     {
       "id": 1,
-      "title": "De cero a uno",
-      "author": "Peter Thiel",
+      "title": "Las mil y una noches",
+      "author": "Varios",
       "format": "Audiobook",
       "dateStart": "21/04/2020",
       "dateEnd": "24/04/2020",
@@ -108,8 +108,8 @@ const initialState = {
     },
     {
       "id": 1,
-      "title": "De cero a uno",
-      "author": "Peter Thiel",
+      "title": "Los bandidos de río frío",
+      "author": "Manuel Payno",
       "format": "Audiobook",
       "dateStart": "21/04/2020",
       "dateEnd": "24/04/2020",
@@ -120,8 +120,8 @@ const initialState = {
     },
     {
       "id": 1,
-      "title": "De cero a uno",
-      "author": "Peter Thiel",
+      "title": "Hábitos atómicos",
+      "author": "James Clear",
       "format": "Audiobook",
       "dateStart": "21/04/2020",
       "dateEnd": "24/04/2020",
@@ -132,8 +132,8 @@ const initialState = {
     },
     {
       "id": 1,
-      "title": "De cero a uno",
-      "author": "Peter Thiel",
+      "title": "Rey, Dama, Valet",
+      "author": "Vladimir Nabokov",
       "format": "Audiobook",
       "dateStart": "21/04/2020",
       "dateEnd": "24/04/2020",
