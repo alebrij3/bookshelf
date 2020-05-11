@@ -58,8 +58,8 @@ const initialState = {
     },
     {
       "id": 1,
-      "title": "De cero a uno",
-      "author": "Peter Thiel",
+      "title": "Every Tool's a Hammer",
+      "author": "Adam Savage",
       "format": "Audiobook",
       "dateStart": "21/04/2020",
       "dateEnd": "24/04/2020",
