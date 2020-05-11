@@ -39,7 +39,7 @@ const initialState = {
       "dateStart": "21/04/2020",
       "dateEnd": "24/04/2020",
       "excerpt": "Lorem Ipsum",
-      "category": "Business",
+      "category": "",
       "tags": [],
       "duration": "10h 25m"
     },
@@ -53,7 +53,7 @@ const initialState = {
       "dateStart": "21/04/2020",
       "dateEnd": "24/04/2020",
       "excerpt": "Lorem Ipsum",
-      "category": "Business",
+      "category": "",
       "tags": [],
       "duration": "10h 25m"
     },
@@ -65,7 +65,7 @@ const initialState = {
       "dateStart": "",
       "dateEnd": "",
       "excerpt": "Lorem Ipsum",
-      "category": "Business",
+      "category": "",
       "tags": [],
       "duration": "10h 25m"
     },
@@ -77,7 +77,7 @@ const initialState = {
       "dateStart": "",
       "dateEnd": "",
       "excerpt": "Lorem Ipsum",
-      "category": "Business",
+      "category": "",
       "tags": [],
       "duration": "10h 25m"
     },
@@ -89,7 +89,7 @@ const initialState = {
       "dateStart": "",
       "dateEnd": "",
       "excerpt": "Lorem Ipsum",
-      "category": "Business",
+      "category": "",
       "tags": [],
       "duration": "10h 25m"
     },
@@ -103,7 +103,7 @@ const initialState = {
       "dateStart": "",
       "dateEnd": "",
       "excerpt": "Lorem Ipsum",
-      "category": "Business",
+      "category": "",
       "tags": [],
       "duration": "10h 25m"
     },
@@ -115,7 +115,7 @@ const initialState = {
       "dateStart": "21/04/2020",
       "dateEnd": "",
       "excerpt": "Lorem Ipsum",
-      "category": "Business",
+      "category": "",
       "tags": [],
       "duration": "10h 25m"
     },
@@ -127,7 +127,7 @@ const initialState = {
       "dateStart": "",
       "dateEnd": "",
       "excerpt": "Lorem Ipsum",
-      "category": "Business",
+      "category": "",
       "tags": [],
       "duration": "10h 25m"
     },
@@ -139,7 +139,7 @@ const initialState = {
       "dateStart": "",
       "dateEnd": "",
       "excerpt": "Lorem Ipsum",
-      "category": "Business",
+      "category": "",
       "tags": [],
       "duration": "10h 25m"
     },
@@ -151,7 +151,7 @@ const initialState = {
       "dateStart": "21/04/2020",
       "dateEnd": "24/04/2020",
       "excerpt": "Lorem Ipsum",
-      "category": "Business",
+      "category": "",
       "tags": [],
       "duration": "10h 25m"
     },
