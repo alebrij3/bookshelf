@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Shelf from './containers/Shelf';
 
 const initialState = {
+  "allBooks": [],
   "nowReading": [
     {
       "id": 1,
