@@ -70,8 +70,8 @@ const initialState = {
     },
     {
       "id": 1,
-      "title": "De cero a uno",
-      "author": "Peter Thiel",
+      "title": "Exactly",
+      "author": "Simon Winchester",
       "format": "Audiobook",
       "dateStart": "21/04/2020",
       "dateEnd": "24/04/2020",
@@ -82,8 +82,8 @@ const initialState = {
     },
     {
       "id": 1,
-      "title": "De cero a uno",
-      "author": "Peter Thiel",
+      "title": "Life in Code",
+      "author": "Ellen Ullman",
       "format": "Audiobook",
       "dateStart": "21/04/2020",
       "dateEnd": "24/04/2020",
