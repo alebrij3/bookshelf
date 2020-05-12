@@ -28347,7 +28347,7 @@ var Book = /*#__PURE__*/function (_React$Component) {
       console.log(title);
       return /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("img", {
         src: cover
-      }), /*#__PURE__*/_react.default.createElement("h3", null, title), /*#__PURE__*/_react.default.createElement("p", null, author), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, "Formato: ", format), /*#__PURE__*/_react.default.createElement("li", null, "Fecha Inicio: ", dateStart), /*#__PURE__*/_react.default.createElement("li", null, "Fecha Fin: ", dateEnd), /*#__PURE__*/_react.default.createElement("li", null, "Resumen: ", excerpt), /*#__PURE__*/_react.default.createElement("li", null, "Categor\xEDa: ", category), /*#__PURE__*/_react.default.createElement("li", null, "Etiquetas:", /*#__PURE__*/_react.default.createElement("ul", null, tags.map(function (tag) {
+      }), /*#__PURE__*/_react.default.createElement("h3", null, title), /*#__PURE__*/_react.default.createElement("p", null, author), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, "Categor\xEDa: ", category), /*#__PURE__*/_react.default.createElement("li", null, "Etiquetas:", /*#__PURE__*/_react.default.createElement("ul", null, tags.map(function (tag) {
         return /*#__PURE__*/_react.default.createElement("li", null, tag);
       }))), /*#__PURE__*/_react.default.createElement("li", null, duration)));
     }
@@ -28358,7 +28358,79 @@ var Book = /*#__PURE__*/function (_React$Component) {
 
 var _default = Book;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"../src/components/AddBook.jsx":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
+
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
+  }
+
+  return bundleURL;
+}
+
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
+  }
+
+  return '/';
+}
+
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
+
+function updateLink(link) {
+  var newLink = link.cloneNode();
+
+  newLink.onload = function () {
+    link.remove();
+  };
+
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+
+var cssTimeout = null;
+
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
+    }
+
+    cssTimeout = null;
+  }, 50);
+}
+
+module.exports = reloadCSS;
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../src/assets/styles/components/AddBook.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/components/AddBook.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28367,6 +28439,8 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
+
+require("../assets/styles/components/AddBook.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28426,7 +28500,7 @@ var AddBook = /*#__PURE__*/function (_React$Component) {
 
 var _default = AddBook;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"../src/containers/Shelf.jsx":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../assets/styles/components/AddBook.scss":"../src/assets/styles/components/AddBook.scss"}],"../src/containers/Shelf.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {

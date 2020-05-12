@@ -10,10 +10,6 @@ class Book extends React.Component {
         <h3>{title}</h3>
         <p>{author}</p>
         <ul>
-          <li>Formato: {format}</li>
-          <li>Fecha Inicio: {dateStart}</li>
-          <li>Fecha Fin: {dateEnd}</li>
-          <li>Resumen: {excerpt}</li>
           <li>Categoría: {category}</li>
           <li>Etiquetas:
             <ul>
