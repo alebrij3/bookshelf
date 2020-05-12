@@ -17,6 +17,9 @@
   ul {
     list-style-type: none;
     padding: 0;
+    li {
+      font-size: 0.9rem;
+    }
   }
   .tags {
     display: flex;
@@ -27,6 +30,7 @@
       border: 1px solid grey;
       margin: 3px;
       border-radius: 18px;
+      line-height: 1;
     }
   }
 }

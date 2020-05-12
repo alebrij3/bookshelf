@@ -4,10 +4,10 @@ import '../assets/styles/containers/Shelf.scss';
 
 class Shelf extends React.Component {
   render() {
-    const { nowReading, read, wantToRead } = this.props;
+    const { allBooks, nowReading, read, wantToRead } = this.props;
     return (
       <div id="shelf">
-        {nowReading.map(item =>
+        {allBooks.map(item =>
           <Book key={item.id} {...item} />
         )}
       </div>

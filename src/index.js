@@ -5,8 +5,7 @@ import AddBook from './components/AddBook';
 import Layout from './containers/Layout';
 
 const initialState = {
-  "allBooks": [],
-  "nowReading": [
+  "allBooks": [
     {
       "id": 1,
       "cover": "../assets/static/img/shoe-dog.jpg",
@@ -46,8 +45,6 @@ const initialState = {
       "tags": [],
       "duration": "10h 25m"
     },
-  ],
-  "read": [
     {
       "id": 1,
       "title": "The Hard Thing About Hard Things",
@@ -96,8 +93,6 @@ const initialState = {
       "tags": [],
       "duration": "10h 25m"
     },
-  ],
-  "wantToRead": [
     {
       "id": 1,
       "title": "Las mil y una noches",
@@ -158,7 +153,10 @@ const initialState = {
       "tags": [],
       "duration": "10h 25m"
     },
-  ]
+  ],
+  "nowReading": [],
+  "read": [],
+  "wantToRead": []
 }
 
 ReactDOM.render(
