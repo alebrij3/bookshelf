@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Shelf from './containers/Shelf';
 import AddBook from './components/AddBook';
+import Layout from './containers/Layout';
 
 const initialState = {
   "allBooks": [],
@@ -160,5 +161,5 @@ const initialState = {
 }
 
 ReactDOM.render(
-  <Shelf {...initialState} />, document.getElementById('root')
+  <Layout><Shelf {...initialState} /></Layout>, document.getElementById('root')
 );
