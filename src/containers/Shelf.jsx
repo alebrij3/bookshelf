@@ -1,7 +1,6 @@
 import React from 'react';
 import Book from '../components/Book';
-import AddBook from '../components/AddBook';
-import Hero from '../components/Hero';
+import '../assets/styles/containers/Shelf.scss';
 
 class Shelf extends React.Component {
   render() {
