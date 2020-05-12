@@ -18,7 +18,6 @@ class Book extends React.Component {
               )}
             </ul>
           </li>
-          <li>{duration}</li>
         </ul>
       </article>
     );
