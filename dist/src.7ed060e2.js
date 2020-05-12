@@ -28358,6 +28358,74 @@ var Book = /*#__PURE__*/function (_React$Component) {
 
 var _default = Book;
 exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"../src/components/AddBook.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var AddBook = /*#__PURE__*/function (_React$Component) {
+  _inherits(AddBook, _React$Component);
+
+  var _super = _createSuper(AddBook);
+
+  function AddBook() {
+    _classCallCheck(this, AddBook);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(AddBook, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("form", {
+        action: ""
+      }, /*#__PURE__*/_react.default.createElement("input", {
+        type: "text"
+      }), /*#__PURE__*/_react.default.createElement("input", {
+        type: "text"
+      }), /*#__PURE__*/_react.default.createElement("input", {
+        type: "text"
+      }), /*#__PURE__*/_react.default.createElement("input", {
+        type: "submit",
+        value: "Agregar Libro"
+      }));
+    }
+  }]);
+
+  return AddBook;
+}(_react.default.Component);
+
+var _default = AddBook;
+exports.default = _default;
 },{"react":"../node_modules/react/index.js"}],"../src/containers/Shelf.jsx":[function(require,module,exports) {
 "use strict";
 
@@ -28369,6 +28437,8 @@ exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var _Book = _interopRequireDefault(require("../components/Book"));
+
+var _AddBook = _interopRequireDefault(require("../components/AddBook"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28418,7 +28488,7 @@ var Shelf = /*#__PURE__*/function (_React$Component) {
         return /*#__PURE__*/_react.default.createElement(_Book.default, _extends({
           key: item.id
         }, item));
-      }));
+      }), /*#__PURE__*/_react.default.createElement(_AddBook.default, null));
     }
   }]);
 
@@ -28427,7 +28497,7 @@ var Shelf = /*#__PURE__*/function (_React$Component) {
 
 var _default = Shelf;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../components/Book":"../src/components/Book.jsx"}],"../src/index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../components/Book":"../src/components/Book.jsx","../components/AddBook":"../src/components/AddBook.jsx"}],"../src/index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -28436,150 +28506,153 @@ var _reactDom = _interopRequireDefault(require("react-dom"));
 
 var _Shelf = _interopRequireDefault(require("./containers/Shelf"));
 
+var _AddBook = _interopRequireDefault(require("./components/AddBook"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var initialState = {
+  "allBooks": [],
   "nowReading": [{
     "id": 1,
     "cover": "../assets/static/img/shoe-dog.jpg",
     "title": "Shoe Dog",
     "author": "Phil Knight",
-    "format": "Audiobook",
-    "dateStart": "21/04/2020",
-    "dateEnd": "24/04/2020",
-    "excerpt": "Lorem Ipsum",
+    "format": "audiobook",
+    "dateStart": "28/04/2020",
+    "dateEnd": "",
+    "description": "In this instant and tenacious New York Times bestseller, Nike founder and board chairman Phil Knight offers a rare and revealing look at the notoriously media-shy man behind the swoosh (\"Booklist,\" starred review), opening up about his company's early days as an intrepid start-up and its evolution into one of the world s most iconic, game-changing, and profitable brands. Young, searching, fresh out of business school, Phil Knight borrowed fifty dollars from his father and launched a company with one simple mission: import high-quality, low-cost running shoes from Japan. Selling the shoes from the trunk of his car in 1963, Knight grossed eight thousand dollars that first year. Today, Nike s annual sales top $30 billion. In this age of start-ups, Knight s Nike is the gold standard, and its swoosh is more than a logo. A symbol of grace and greatness, it s one of the few icons instantly recognized in every corner of the world. But Knight, the man behind the swoosh, has always been a mystery. In \"Shoe Dog,\" he tells his story at last. It all begins with a classic crossroads moment at twenty-four, backpacking across the world, and wrestling with life s Great Questions. Rather than work for a big corporation, Knight decides he will create something all his own, something new, dynamic, different. He details the many terrifying risks he encountered, the crushing setbacks, the ruthless competitors, the countless doubters and haters and hostile bankers as well as his many thrilling triumphs and narrow escapes. Above all, he recalls the relationships that formed the heart and soul of Nike, with his former track coach, the irascible and charismatic Bill Bowerman, and with his first employees, a ragtag group of misfits and savants who quickly became a band of swoosh-crazed brothers. Together, harnessing the electrifying power of a bold vision and a shared belief in the redemptive, transformative power of sports, they created a brand and a culture that changed everything.\"",
     "category": "Business",
-    "tags": ['startups', 'entrepreneurship', 'business', 'technology'],
-    "duration": "10h 25m"
+    "tags": ['nike', 'entrepreneurship', 'business'],
+    "duration": "13h 21m"
   }, {
     "id": 1,
     "cover": "../assets/static/img/de-cero-a-uno.jpg",
     "title": "De cero a uno",
     "author": "Peter Thiel",
-    "format": "Audiobook",
+    "format": "audiobook",
     "dateStart": "21/04/2020",
     "dateEnd": "24/04/2020",
-    "excerpt": "Lorem Ipsum",
+    "description": "Peter Thiel, gran inversionista y emprendedor, narra a partir de su experiencia qué tipo de interrogantes debe hacerse una startup para poder triunfar sobre la competencia. Con el fin de no fracasar, hay que innovar y partir de una clara premisa: faltan varios secretos por ser descubiertos. Por ello, Thiel y Masters desmenuzan las bases fundamentales que nos harán progresar de cero a uno.",
     "category": "Business",
     "tags": ['startups', 'entrepreneurship', 'business', 'technology'],
-    "duration": "10h 25m"
+    "duration": "6h 13m"
   }, {
     "id": 1,
-    "title": "De cero a uno",
-    "author": "Peter Thiel",
+    "title": "El hombre en busca de sentido",
+    "author": "Viktor Frankl",
     "format": "Audiobook",
-    "dateStart": "21/04/2020",
-    "dateEnd": "24/04/2020",
-    "excerpt": "Lorem Ipsum",
-    "category": "Business",
-    "tags": ['startups', 'entrepreneurship', 'business', 'technology'],
+    "dateStart": "",
+    "dateEnd": "",
+    "description": "",
+    "category": "",
+    "tags": [],
     "duration": "10h 25m"
   }],
   "read": [{
     "id": 1,
-    "title": "De cero a uno",
-    "author": "Peter Thiel",
+    "title": "The Hard Thing About Hard Things",
+    "author": "Ben Horowitz",
     "format": "Audiobook",
-    "dateStart": "21/04/2020",
-    "dateEnd": "24/04/2020",
-    "excerpt": "Lorem Ipsum",
-    "category": "Business",
-    "tags": ['startups', 'entrepreneurship', 'business', 'technology'],
+    "dateStart": "",
+    "dateEnd": "",
+    "description": "Lorem Ipsum",
+    "category": "",
+    "tags": [],
     "duration": "10h 25m"
   }, {
     "id": 1,
-    "title": "De cero a uno",
-    "author": "Peter Thiel",
+    "title": "Every Tool's a Hammer",
+    "author": "Adam Savage",
     "format": "Audiobook",
-    "dateStart": "21/04/2020",
-    "dateEnd": "24/04/2020",
-    "excerpt": "Lorem Ipsum",
-    "category": "Business",
-    "tags": ['startups', 'entrepreneurship', 'business', 'technology'],
+    "dateStart": "",
+    "dateEnd": "",
+    "description": "",
+    "category": "",
+    "tags": [],
     "duration": "10h 25m"
   }, {
     "id": 1,
-    "title": "De cero a uno",
-    "author": "Peter Thiel",
+    "title": "Exactly",
+    "author": "Simon Winchester",
     "format": "Audiobook",
-    "dateStart": "21/04/2020",
-    "dateEnd": "24/04/2020",
-    "excerpt": "Lorem Ipsum",
-    "category": "Business",
-    "tags": ['startups', 'entrepreneurship', 'business', 'technology'],
+    "dateStart": "",
+    "dateEnd": "",
+    "description": "",
+    "category": "",
+    "tags": [],
     "duration": "10h 25m"
   }, {
     "id": 1,
-    "title": "De cero a uno",
-    "author": "Peter Thiel",
+    "title": "Life in Code",
+    "author": "Ellen Ullman",
     "format": "Audiobook",
-    "dateStart": "21/04/2020",
-    "dateEnd": "24/04/2020",
-    "excerpt": "Lorem Ipsum",
-    "category": "Business",
-    "tags": ['startups', 'entrepreneurship', 'business', 'technology'],
+    "dateStart": "",
+    "dateEnd": "",
+    "description": "",
+    "category": "",
+    "tags": [],
     "duration": "10h 25m"
   }],
   "wantToRead": [{
     "id": 1,
-    "title": "De cero a uno",
-    "author": "Peter Thiel",
+    "title": "Las mil y una noches",
+    "author": "Varios",
     "format": "Audiobook",
-    "dateStart": "21/04/2020",
-    "dateEnd": "24/04/2020",
-    "excerpt": "Lorem Ipsum",
-    "category": "Business",
-    "tags": ['startups', 'entrepreneurship', 'business', 'technology'],
+    "dateStart": "",
+    "dateEnd": "",
+    "description": "",
+    "category": "",
+    "tags": [],
     "duration": "10h 25m"
   }, {
     "id": 1,
-    "title": "De cero a uno",
-    "author": "Peter Thiel",
-    "format": "Audiobook",
-    "dateStart": "21/04/2020",
-    "dateEnd": "24/04/2020",
-    "excerpt": "Lorem Ipsum",
-    "category": "Business",
-    "tags": ['startups', 'entrepreneurship', 'business', 'technology'],
+    "title": "Los bandidos de río frío",
+    "author": "Manuel Payno",
+    "format": "paper",
+    "dateStart": "03/09/2019",
+    "dateEnd": "",
+    "description": "",
+    "category": "",
+    "tags": [],
     "duration": "10h 25m"
   }, {
     "id": 1,
-    "title": "De cero a uno",
-    "author": "Peter Thiel",
-    "format": "Audiobook",
-    "dateStart": "21/04/2020",
-    "dateEnd": "24/04/2020",
-    "excerpt": "Lorem Ipsum",
-    "category": "Business",
-    "tags": ['startups', 'entrepreneurship', 'business', 'technology'],
+    "title": "Hábitos atómicos",
+    "author": "James Clear",
+    "format": "audiobook",
+    "dateStart": "",
+    "dateEnd": "",
+    "description": "",
+    "category": "",
+    "tags": [],
     "duration": "10h 25m"
   }, {
     "id": 1,
-    "title": "De cero a uno",
-    "author": "Peter Thiel",
-    "format": "Audiobook",
-    "dateStart": "21/04/2020",
-    "dateEnd": "24/04/2020",
-    "excerpt": "Lorem Ipsum",
-    "category": "Business",
-    "tags": ['startups', 'entrepreneurship', 'business', 'technology'],
+    "title": "Rey, Dama, Valet",
+    "author": "Vladimir Nabokov",
+    "format": "paper",
+    "dateStart": "",
+    "dateEnd": "",
+    "description": "",
+    "category": "",
+    "tags": [],
     "duration": "10h 25m"
   }, {
     "id": 1,
-    "title": "De cero a uno",
-    "author": "Peter Thiel",
+    "title": "Search Inside Yourself",
+    "author": "Chade-Meng Tan",
     "format": "Audiobook",
-    "dateStart": "21/04/2020",
-    "dateEnd": "24/04/2020",
-    "excerpt": "Lorem Ipsum",
-    "category": "Business",
-    "tags": ['startups', 'entrepreneurship', 'business', 'technology'],
+    "dateStart": "",
+    "dateEnd": "",
+    "description": "",
+    "category": "",
+    "tags": [],
     "duration": "10h 25m"
   }]
 };
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_Shelf.default, initialState), document.getElementById('root'));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./containers/Shelf":"../src/containers/Shelf.jsx"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./containers/Shelf":"../src/containers/Shelf.jsx","./components/AddBook":"../src/components/AddBook.jsx"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -28607,7 +28680,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55966" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49977" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

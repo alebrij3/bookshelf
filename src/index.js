@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Shelf from './containers/Shelf';
+import AddBook from './components/AddBook';
 
 const initialState = {
   "allBooks": [],
