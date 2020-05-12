@@ -1,0 +1,17 @@
+form {
+  max-width: 100%;
+  width: 400px;
+  padding: 10px;
+  border: 1px solid grey;
+  overflow: hidden;
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  input[type="submit"] {
+    width: auto;
+    margin-bottom: 0;
+    padding: 7px;
+    float: right;
+  }
+}
