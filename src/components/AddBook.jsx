@@ -1,4 +1,5 @@
 import React from 'react';
+import '../assets/styles/components/AddBook.scss';
 
 class AddBook extends React.Component {
   render() {
