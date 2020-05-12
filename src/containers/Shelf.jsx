@@ -6,8 +6,7 @@ class Shelf extends React.Component {
   render() {
     const { nowReading, read, wantToRead } = this.props;
     return (
-      <div>
-        <h2>Now Reading:</h2>
+      <div id="shelf">
         {nowReading.map(item =>
           <Book key={item.id} {...item} />
         )}

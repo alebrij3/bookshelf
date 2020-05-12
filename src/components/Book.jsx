@@ -5,14 +5,14 @@ class Book extends React.Component {
     const { cover, title, author, format, dateStart, dateEnd, excerpt, category, tags, duration } = this.props;
     console.log(title)
     return (
-      <article>
+      <article className="book">
         <img src={cover} />
         <h3>{title}</h3>
         <p>{author}</p>
         <ul>
           <li>Categoría: {category}</li>
           <li>Etiquetas:
-            <ul>
+            <ul className="tags">
               {tags.map(tag =>
                 <li>{tag}</li>  
               )}
