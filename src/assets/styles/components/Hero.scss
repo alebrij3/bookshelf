@@ -1,0 +1,27 @@
+#hero {
+  background-image: url('../../static/img/background-books.jpg');
+  height: 400px;
+  background-size: cover;
+  background-position: center bottom;
+  color: teal;
+  /* text-shadow: 2px 2px 5px teal; */
+  background-repeat: no-repeat;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px 10px;
+  p {
+    margin: 0;
+    text-align: center;
+  }
+  p + p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 420px) {
+  #hero {
+    padding-top: 40px;
+  }
+}
