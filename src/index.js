@@ -35,6 +35,7 @@ const initialState = {
     },
     {
       "id": 1,
+      "cover": "../assets/static/img/el-hombre-en-busca-de-sentido.jpg",
       "title": "El hombre en busca de sentido",
       "author": "Viktor Frankl",
       "format": "Audiobook",
