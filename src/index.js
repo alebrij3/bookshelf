@@ -53,7 +53,7 @@ const initialState = {
     },
     {
       "id": 4,
-      "cover": "",
+      "cover": "https://i.postimg.cc/Pq5vcRqv/the-hard-thing.jpg",
       "title": "The Hard Thing About Hard Things",
       "author": "Ben Horowitz",
       "format": "audiobook",
