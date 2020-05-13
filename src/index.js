@@ -188,7 +188,7 @@ const initialState = {
     },
     {
       "id": 13,
-      "cover": "",
+      "cover": "https://i.postimg.cc/sgZS8JhV/image.jpg",
       "title": "Extreme Ownership",
       "author": "Jocko Willink",
       "format": "ebook",
