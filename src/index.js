@@ -20,7 +20,7 @@ const initialState = {
       "duration": "13h 21m"
     },
     {
-      "id": 1,
+      "id": 2,
       "cover": "../assets/static/img/de-cero-a-uno.jpg",
       "title": "De cero a uno",
       "author": "Peter Thiel",
@@ -33,7 +33,7 @@ const initialState = {
       "duration": "6h 13m"
     },
     {
-      "id": 1,
+      "id": 3,
       "cover": "../assets/static/img/el-hombre-en-busca-de-sentido.jpg",
       "title": "El hombre en busca de sentido",
       "author": "Viktor Frankl",
@@ -46,7 +46,7 @@ const initialState = {
       "duration": "10h 25m"
     },
     {
-      "id": 1,
+      "id": 4,
       "title": "The Hard Thing About Hard Things",
       "author": "Ben Horowitz",
       "format": "Audiobook",
@@ -58,7 +58,7 @@ const initialState = {
       "duration": "10h 25m"
     },
     {
-      "id": 1,
+      "id": 5,
       "title": "Every Tool's a Hammer",
       "author": "Adam Savage",
       "format": "Audiobook",
@@ -70,7 +70,7 @@ const initialState = {
       "duration": "10h 25m"
     },
     {
-      "id": 1,
+      "id": 6,
       "title": "Exactly",
       "author": "Simon Winchester",
       "format": "Audiobook",
@@ -82,7 +82,7 @@ const initialState = {
       "duration": "10h 25m"
     },
     {
-      "id": 1,
+      "id": 7,
       "title": "Life in Code",
       "author": "Ellen Ullman",
       "format": "Audiobook",
@@ -94,7 +94,7 @@ const initialState = {
       "duration": "10h 25m"
     },
     {
-      "id": 1,
+      "id": 8,
       "title": "Las mil y una noches",
       "author": "Varios",
       "format": "Audiobook",
@@ -106,7 +106,7 @@ const initialState = {
       "duration": "10h 25m"
     },
     {
-      "id": 1,
+      "id": 9,
       "title": "Los bandidos de río frío",
       "author": "Manuel Payno",
       "format": "paper",
@@ -118,7 +118,7 @@ const initialState = {
       "duration": "10h 25m"
     },
     {
-      "id": 1,
+      "id": 10,
       "title": "Hábitos atómicos",
       "author": "James Clear",
       "format": "audiobook",
@@ -130,7 +130,7 @@ const initialState = {
       "duration": "10h 25m"
     },
     {
-      "id": 1,
+      "id": 11,
       "title": "Rey, Dama, Valet",
       "author": "Vladimir Nabokov",
       "format": "paper",
@@ -142,7 +142,7 @@ const initialState = {
       "duration": "10h 25m"
     },
     {
-      "id": 1,
+      "id": 12,
       "title": "Search Inside Yourself",
       "author": "Chade-Meng Tan",
       "format": "Audiobook",
