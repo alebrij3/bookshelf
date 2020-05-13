@@ -5,9 +5,10 @@ class AddBook extends React.Component {
   render() {
     return (
       <form action="">
-        <input type="text"/>
-        <input type="text"/>
-        <input type="text"/>
+        <label htmlFor="title">Title</label>
+        <input id="title" type="text"/>
+        <label htmlFor="author">Author</label>
+        <input id="author" type="text"/>
         <input type="submit" value="Agregar Libro" />
       </form>
     );
