@@ -8,7 +8,7 @@ const initialState = {
   "allBooks": [
     {
       "id": 1,
-      "cover": "../assets/static/img/shoe-dog.jpg",
+      "cover": "https://i.postimg.cc/wB4RdQtf/shoe-dog.jpg",
       "title": "Shoe Dog",
       "author": "Phil Knight",
       "format": "audiobook",
@@ -23,7 +23,7 @@ const initialState = {
     },
     {
       "id": 2,
-      "cover": "../assets/static/img/de-cero-a-uno.jpg",
+      "cover": "https://i.postimg.cc/G2B83TGc/de-cero-a-uno.jpg",
       "title": "De cero a uno",
       "author": "Peter Thiel",
       "format": "audiobook",
@@ -38,7 +38,7 @@ const initialState = {
     },
     {
       "id": 3,
-      "cover": "../assets/static/img/el-hombre-en-busca-de-sentido.jpg",
+      "cover": "https://i.postimg.cc/mZzCBJyQ/el-hombre-en-busca-de-sentido.jpg",
       "title": "El hombre en busca de sentido",
       "author": "Viktor Frankl",
       "format": "ebook",
@@ -53,6 +53,7 @@ const initialState = {
     },
     {
       "id": 4,
+      "cover": "",
       "title": "The Hard Thing About Hard Things",
       "author": "Ben Horowitz",
       "format": "audiobook",
@@ -67,6 +68,7 @@ const initialState = {
     },
     {
       "id": 5,
+      "cover": "",
       "title": "Every Tool's a Hammer",
       "author": "Adam Savage",
       "format": "audiobook",
@@ -81,6 +83,7 @@ const initialState = {
     },
     {
       "id": 6,
+      "cover": "",
       "title": "Exactly",
       "author": "Simon Winchester",
       "format": "audiobook",
@@ -95,6 +98,7 @@ const initialState = {
     },
     {
       "id": 7,
+      "cover": "",
       "title": "Life in Code",
       "author": "Ellen Ullman",
       "format": "audiobook",
@@ -109,6 +113,7 @@ const initialState = {
     },
     {
       "id": 8,
+      "cover": "",
       "title": "Las mil y una noches",
       "author": "Varios",
       "format": "paper",
@@ -123,6 +128,7 @@ const initialState = {
     },
     {
       "id": 9,
+      "cover": "",
       "title": "Los bandidos de río frío",
       "author": "Manuel Payno",
       "format": "paper",
@@ -137,6 +143,7 @@ const initialState = {
     },
     {
       "id": 10,
+      "cover": "",
       "title": "Atomic Habits",
       "author": "James Clear",
       "format": "ebook",
@@ -151,6 +158,7 @@ const initialState = {
     },
     {
       "id": 11,
+      "cover": "",
       "title": "Rey, Dama, Valet",
       "author": "Vladimir Nabokov",
       "format": "paper",
@@ -165,6 +173,7 @@ const initialState = {
     },
     {
       "id": 12,
+      "cover": "",
       "title": "Search Inside Yourself",
       "author": "Chade-Meng Tan",
       "format": "ebook",
