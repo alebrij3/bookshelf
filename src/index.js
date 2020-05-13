@@ -201,6 +201,21 @@ const initialState = {
       "tags": [],
       "duration": ""
     },
+    {
+      "id": 14,
+      "cover": "https://i.postimg.cc/G293J0mz/mariposa.jpg",
+      "title": "Mariposa",
+      "author": "Yusra Mardini",
+      "format": "paper",
+      "status": "read",
+      "rating": "",
+      "dateStart": "",
+      "dateEnd": "",
+      "description": "",
+      "category": "",
+      "tags": [],
+      "duration": ""
+    },
   ],
   "nowReading": [],
   "read": [],
