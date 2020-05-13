@@ -43,7 +43,7 @@ const initialState = {
       "description": "",
       "category": "",
       "tags": [],
-      "duration": "10h 25m"
+      "duration": ""
     },
     {
       "id": 4,
@@ -55,7 +55,7 @@ const initialState = {
       "description": "Lorem Ipsum",
       "category": "",
       "tags": [],
-      "duration": "10h 25m"
+      "duration": ""
     },
     {
       "id": 5,
@@ -67,7 +67,7 @@ const initialState = {
       "description": "",
       "category": "",
       "tags": [],
-      "duration": "10h 25m"
+      "duration": ""
     },
     {
       "id": 6,
@@ -79,7 +79,7 @@ const initialState = {
       "description": "",
       "category": "",
       "tags": [],
-      "duration": "10h 25m"
+      "duration": ""
     },
     {
       "id": 7,
@@ -91,7 +91,7 @@ const initialState = {
       "description": "",
       "category": "",
       "tags": [],
-      "duration": "10h 25m"
+      "duration": ""
     },
     {
       "id": 8,
@@ -103,7 +103,7 @@ const initialState = {
       "description": "",
       "category": "",
       "tags": [],
-      "duration": "10h 25m"
+      "duration": ""
     },
     {
       "id": 9,
@@ -115,7 +115,7 @@ const initialState = {
       "description": "",
       "category": "",
       "tags": [],
-      "duration": "10h 25m"
+      "duration": ""
     },
     {
       "id": 10,
@@ -127,7 +127,7 @@ const initialState = {
       "description": "",
       "category": "",
       "tags": [],
-      "duration": "10h 25m"
+      "duration": ""
     },
     {
       "id": 11,
@@ -139,7 +139,7 @@ const initialState = {
       "description": "",
       "category": "",
       "tags": [],
-      "duration": "10h 25m"
+      "duration": ""
     },
     {
       "id": 12,
@@ -151,7 +151,7 @@ const initialState = {
       "description": "",
       "category": "",
       "tags": [],
-      "duration": "10h 25m"
+      "duration": ""
     },
   ],
   "nowReading": [],
