@@ -186,16 +186,17 @@ const initialState = {
       "tags": [],
       "duration": ""
     },
+    {
       "id": 13,
       "cover": "",
       "title": "Extreme Ownership",
-      "author": "Chade-Meng Tan",
+      "author": "Jocko Willink",
       "format": "ebook",
       "status": "nowReading",
       "rating": "",
       "dateStart": "",
       "dateEnd": "",
-      "description": "",
+      "description": "An updated edition of the blockbuster bestselling leadership book that took America and the world by storm, two U.S. Navy SEAL officers who led the most highly decorated special operations unit of the Iraq War demonstrate how to apply powerful leadership principles from the battlefield to business and life.",
       "category": "",
       "tags": [],
       "duration": ""
