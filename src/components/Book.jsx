@@ -20,9 +20,9 @@ class Book extends React.Component {
       <article className="book">
         <img src={cover} />
         <div className="book-details">
-          {/*<h3>{title}</h3>
+          <h3>{title}</h3>
           <p>{author}</p>
-          <ul>
+          {/*<ul>
             {hasCategory ? <li>Categoría: {category}</li> : null}
             {hasTags ? <li>Etiquetas:
               <ul className="tags">

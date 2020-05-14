@@ -1,7 +1,9 @@
 .book {
   display: grid;
   grid-template-columns: 1fr;
-  h3 {
+  grid-template-rows: auto 100px;
+  gap: 10px;
+  .details {
     align-self: start;
   }
   img {
