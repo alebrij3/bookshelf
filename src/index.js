@@ -68,7 +68,7 @@ const initialState = {
     },
     {
       "id": 5,
-      "cover": "",
+      "cover": "https://i.postimg.cc/QMXQkFy1/image.jpg",
       "title": "Every Tool's a Hammer",
       "author": "Adam Savage",
       "format": "audiobook",
@@ -83,7 +83,7 @@ const initialState = {
     },
     {
       "id": 6,
-      "cover": "",
+      "cover": "https://i.postimg.cc/YSqFLJvx/image.jpg",
       "title": "Exactly",
       "author": "Simon Winchester",
       "format": "audiobook",
@@ -98,7 +98,7 @@ const initialState = {
     },
     {
       "id": 7,
-      "cover": "",
+      "cover": "https://i.postimg.cc/DwcsZ2wZ/image.jpg",
       "title": "Life in Code",
       "author": "Ellen Ullman",
       "format": "audiobook",
@@ -113,7 +113,7 @@ const initialState = {
     },
     {
       "id": 8,
-      "cover": "",
+      "cover": "https://i.postimg.cc/TPCrkTzS/l9789700771533.jpg",
       "title": "Las mil y una noches",
       "author": "Varios",
       "format": "paper",
@@ -128,7 +128,7 @@ const initialState = {
     },
     {
       "id": 9,
-      "cover": "",
+      "cover": "https://i.postimg.cc/Jn0jv9mh/l9789700766430.jpg",
       "title": "Los bandidos de río frío",
       "author": "Manuel Payno",
       "format": "paper",
@@ -143,7 +143,7 @@ const initialState = {
     },
     {
       "id": 10,
-      "cover": "",
+      "cover": "https://i.postimg.cc/SsnzDC72/Atomic-Habits-by-James-Clear-Book-Cover.jpg",
       "title": "Atomic Habits",
       "author": "James Clear",
       "format": "ebook",
@@ -158,7 +158,7 @@ const initialState = {
     },
     {
       "id": 11,
-      "cover": "",
+      "cover": "https://i.postimg.cc/N0JH6pTv/thumb-13176-portadas-big.jpg",
       "title": "Rey, Dama, Valet",
       "author": "Vladimir Nabokov",
       "format": "paper",
@@ -173,7 +173,7 @@ const initialState = {
     },
     {
       "id": 12,
-      "cover": "",
+      "cover": "https://i.postimg.cc/bJ4SMr36/Search-Inside-Yourself.jpg",
       "title": "Search Inside Yourself",
       "author": "Chade-Meng Tan",
       "format": "ebook",
