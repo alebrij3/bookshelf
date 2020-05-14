@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   padding: 10px;
   gap: 5px;
+  align-items: end;
   img {
     max-width: 100%;
   }
@@ -48,6 +49,7 @@
 }
 @media screen and (min-width: 100px) {
   #shelf {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0 50px;
   }
 }
