@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   padding: 10px;
   gap: 5px;
-  max-width: 100%;
+  max-width: 1000px;
   img {
     max-width: 100%;
   }
@@ -32,5 +32,18 @@
       border-radius: 18px;
       line-height: 1;
     }
+  }
+}
+@media screen and (max-width: 430px) {
+  body {
+    font-size: 14px;
+  }
+  #shelf {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 790px) {
+  #shelf {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
