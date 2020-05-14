@@ -18,7 +18,7 @@ class Book extends React.Component {
     return (
       <article className="book">
         <img src={cover} />
-        <h3>{title}</h3>
+        {/* <h3>{title}</h3>
         <p>{author}</p>
         <ul>
           {hasCategory ? <li>Categoría: {category}</li> : null}
@@ -29,7 +29,7 @@ class Book extends React.Component {
               )}
             </ul>
           </li> : null}
-        </ul>
+        </ul> */}
       </article>
     );
   }

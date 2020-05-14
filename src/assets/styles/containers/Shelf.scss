@@ -3,7 +3,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   padding: 10px;
   gap: 5px;
-  max-width: 1000px;
   img {
     max-width: 100%;
   }
@@ -45,5 +44,10 @@
 @media screen and (min-width: 790px) {
   #shelf {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 100px) {
+  #shelf {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
