@@ -1,0 +1,10 @@
+.book {
+  display: grid;
+  grid-template-columns: 1fr;
+  h3 {
+    align-self: start;
+  }
+  img {
+    align-self: end;
+  }
+}

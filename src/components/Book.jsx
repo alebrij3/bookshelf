@@ -1,4 +1,5 @@
 import React from 'react';
+import '../assets/styles/components/Book.scss';
 
 class Book extends React.Component {
   render() {
@@ -18,18 +19,20 @@ class Book extends React.Component {
     return (
       <article className="book">
         <img src={cover} />
-        {/* <h3>{title}</h3>
-        <p>{author}</p>
-        <ul>
-          {hasCategory ? <li>Categoría: {category}</li> : null}
-          {hasTags ? <li>Etiquetas:
-            <ul className="tags">
-              {tags.map(tag =>
-                <li>{tag}</li>  
-              )}
-            </ul>
-          </li> : null}
-        </ul> */}
+        <div className="book-details">
+          {/*<h3>{title}</h3>
+          <p>{author}</p>
+          <ul>
+            {hasCategory ? <li>Categoría: {category}</li> : null}
+            {hasTags ? <li>Etiquetas:
+              <ul className="tags">
+                {tags.map(tag =>
+                  <li>{tag}</li>  
+                )}
+              </ul>
+            </li> : null}
+          </ul> */}
+        </div>
       </article>
     );
   }
