@@ -291,6 +291,21 @@ const initialState = {
       "tags": [],
       "duration": ""
     },
+    {
+      "id": 20,
+      "cover": "https://i.postimg.cc/gcy28k9y/u-https-trabalibros-com-rs-8801-4886d523-1977-4fa1-ab24-df1b609c897c-838-filename-la-parte-invent.jpg",
+      "title": "La parte inventada",
+      "author": "Rodrigo Fresán",
+      "format": "ebook",
+      "status": "wantToRead",
+      "rating": "",
+      "dateStart": "",
+      "dateEnd": "",
+      "description": "",
+      "category": "",
+      "tags": [],
+      "duration": ""
+    },
   ],
   "nowReading": [],
   "read": [],
