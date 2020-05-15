@@ -1,6 +1,6 @@
 #hero {
-  background-image: url('./../../static/img/background-books.jpg');
-  height: 400px;
+  background-image: url('../../static/img/background-books.png');
+  height: 300px;
   background-size: cover;
   background-position: center bottom;
   margin-bottom: 20px;
@@ -12,7 +12,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0px 10px;
+  padding: 40px 10px 0 10px;
   p {
     margin: 0;
     text-align: center;
@@ -21,8 +21,19 @@
     font-size: 1.5rem;
   }
 }
-@media screen and (min-width: 420px) {
+@media screen and (max-width: 420px) {
   #hero {
-    padding-top: 40px;
+    height: 250px;
+    p {
+      font-size: 1.6rem;
+    }
+    p + p {
+      font-size: 1.3rem;
+    }
+  }
+}
+@media screen and (min-width: 800px) {
+  #hero {
+    height: 400px;
   }
 }
