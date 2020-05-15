@@ -2,7 +2,13 @@ import React from 'react';
 
 class Search extends React.Component {
   render() {
-    return (null);
+    return (
+      <section id="search">
+        <form action="">
+          <input type="text"/>
+        </form>
+      </section>
+    );
   }
 }
 
