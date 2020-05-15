@@ -1,6 +1,7 @@
 #shelf {
   display: grid;
   padding: 10px;
+  grid-template-columns: repeat(auto-fit, 160px);
   gap: 20px;
   align-items: end;
   justify-content: center;
@@ -37,24 +38,5 @@
 @media screen and (max-width: 430px) {
   body {
     font-size: 14px;
-  }
-  #shelf {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (min-width: 431px) {
-  #shelf {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (min-width: 790px) {
-  #shelf {
-    grid-template-columns: repeat(4, 170px);
-  }
-}
-@media screen and (min-width: 1000px) {
-  #shelf {
-    grid-template-columns: repeat(6, 170px);
-    padding: 0 50px;
   }
 }
