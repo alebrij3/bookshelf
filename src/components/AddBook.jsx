@@ -4,7 +4,7 @@ import '../assets/styles/components/AddBook.scss';
 class AddBook extends React.Component {
   render() {
     return (
-      <form action="">
+      <form id="add-book" action="">
         <label htmlFor="title">Title</label>
         <input id="title" type="text"/>
         <label htmlFor="author">Author</label>
