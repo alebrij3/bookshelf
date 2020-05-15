@@ -1,0 +1,12 @@
+#search {
+  padding: 10px;
+  background-color: teal;
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    input {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+}
