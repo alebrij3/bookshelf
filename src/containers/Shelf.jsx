@@ -58,7 +58,6 @@ class Shelf extends React.Component {
   }
   render() {
     const { allBooks, nowReading, read, wantToRead } = this.props;
-    //let books = this.state.isSearching ? this.state.searchResults : allBooks;
     let books = this.state.books;
     return (
       <>
