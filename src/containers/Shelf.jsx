@@ -8,9 +8,6 @@ class Shelf extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      "title": '',
-      "author": '',
-      "cover": '',
       isSearching: false,
       books: this.props.allBooks,
     };
@@ -50,11 +47,6 @@ class Shelf extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const target = e.target;
-    this.setState({
-      title: target.title.value,
-      author: target.author.value,
-      cover: target.cover.value
-    });
     const newBook = {
       id: 200,
       title: target.title.value,
