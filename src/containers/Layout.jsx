@@ -8,7 +8,6 @@ class Layout extends React.Component {
     return(
       <div className="app">
         <Hero />
-        <Search />
         {this.props.children}
       </div>
     );
