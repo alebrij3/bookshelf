@@ -2,14 +2,36 @@ import React from 'react';
 import '../assets/styles/components/AddBook.scss';
 
 class AddBook extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      "title": '',
+      "author": '',
+      "cover": '',
+    };
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  handleSubmit(e) {
+    e.preventDefault();
+    const target = e.target;
+    this.setState({
+      title: target.title.value,
+      author: target.author.value,
+      cover: target.cover.value
+    });
+    console.log('form submitted');
+  }
   render() {
+    
     return (
-      <form id="add-book" action="">
+      <form id="add-book" action="" onSubmit={this.handleSubmit}>
         <label htmlFor="title">Title</label>
-        <input id="title" type="text"/>
+        <input id="title" name="title" type="text"/>
         <label htmlFor="author">Author</label>
-        <input id="author" type="text"/>
-        <input type="submit" value="Agregar Libro" />
+        <input id="author" name="author" type="text"/>
+        <label htmlFor="cover">Book Cover URL</label>
+        <input id="cover" name="cover" type="text"/>
+        <input type="submit" value="Agregar Libro"/>
       </form>
     );
   }
