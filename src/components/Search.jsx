@@ -6,7 +6,8 @@ class Search extends React.Component {
     return (
       <section id="search">
         <form action="">
-          <input type="text" onChange={this.props.handleChange}/>
+          <label htmlFor="search-input">Search book title</label>
+          <input id="search-input" type="text" onChange={this.props.handleChange}/>
           {/* <select name="status" id="">
             <option value="wantToRead">Want to Read</option>
             <option value="nowReading">Now Reading</option>
