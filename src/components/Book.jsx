@@ -3,8 +3,9 @@ import '../assets/styles/components/Book.scss';
 
 class Book extends React.Component {
   render() {
-    const { cover, title, author, format, dateStart, dateEnd, excerpt, category, tags, duration } = this.props;
-    let hasCategory;
+    const { cover, title, author } = this.props;
+    //const { cover, title, author, format, dateStart, dateEnd, excerpt, category, tags, duration } = this.props;
+    /* let hasCategory;
     let hasTags;
     if (category == '') {
       hasCategory = false;
@@ -15,7 +16,7 @@ class Book extends React.Component {
       hasTags = false;
     } else {
       hasTags = true;
-    }
+    } */
     return (
       <article className="book">
         <img src={cover} />

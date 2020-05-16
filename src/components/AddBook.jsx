@@ -2,7 +2,7 @@ import React from 'react';
 import '../assets/styles/components/AddBook.scss';
 
 class AddBook extends React.Component {
-  constructor(props) {
+  /* constructor(props) {
     super(props);
     this.state = {
       "title": '',
@@ -20,11 +20,11 @@ class AddBook extends React.Component {
       cover: target.cover.value
     });
     console.log('form submitted');
-  }
+  } */
   render() {
     
     return (
-      <form id="add-book" action="" onSubmit={this.handleSubmit}>
+      <form id="add-book" action="" onSubmit={this.props.handleSubmit}>
         <label htmlFor="title">Title</label>
         <input id="title" name="title" type="text"/>
         <label htmlFor="author">Author</label>
