@@ -6,12 +6,12 @@ class Search extends React.Component {
     return (
       <section id="search">
         <form action="">
-          <input type="text"/>
-          <select name="status" id="">
+          <input type="text" onChange={this.props.handleChange}/>
+          {/* <select name="status" id="">
             <option value="wantToRead">Want to Read</option>
             <option value="nowReading">Now Reading</option>
             <option value="read">Read</option>
-          </select>
+          </select> */}
         </form>
       </section>
     );

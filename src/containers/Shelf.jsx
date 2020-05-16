@@ -2,6 +2,7 @@ import React from 'react';
 import Book from '../components/Book';
 import '../assets/styles/containers/Shelf.scss';
 import AddBook from '../components/AddBook';
+import Search from '../components/Search';
 
 class Shelf extends React.Component {
   constructor(props) {
@@ -10,8 +11,28 @@ class Shelf extends React.Component {
       "title": '',
       "author": '',
       "cover": '',
+      isSearching: false,
+      books: this.props.allBooks,
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleChange(e) {
+    function filterItems(arr, query) {
+      return arr.filter(book => book.title.toLowerCase().indexOf(query.toLowerCase()) !== -1);
+    }
+    if (e.target.value !== '') {
+      let searchResults = filterItems(this.props.allBooks, e.target.value);
+      this.setState({
+        isSearching: true,
+        books: searchResults,
+      })
+    } else {
+      this.setState({
+        isSearching: false,
+        books: this.props.allBooks,
+      })
+    }
   }
   handleSubmit(e) {
     e.preventDefault();
@@ -32,14 +53,19 @@ class Shelf extends React.Component {
   }
   render() {
     const { allBooks, nowReading, read, wantToRead } = this.props;
+    //let books = this.state.isSearching ? this.state.searchResults : allBooks;
+    let books = this.state.books;
     return (
-      <div id="shelf">
-        {allBooks.map(item =>
-          <Book key={item.id} {...item} />
-        )}
-        <AddBook handleSubmit={this.handleSubmit} />
-        {console.log(this)}
-      </div>
+      <>
+        <Search handleChange={this.handleChange}/>
+        <div id="shelf">
+          {books.map(item =>
+            <Book key={item.id} {...item} />
+          )}
+          <AddBook handleSubmit={this.handleSubmit} />
+          {console.log(this.state)}
+        </div>
+      </>
     );
   }
 }
