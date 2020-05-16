@@ -1,9 +1,12 @@
 #add-book {
-  max-width: 100%;
   width: 400px;
+  align-self: center;
+  justify-self: center;
   padding: 10px;
-  border: 1px solid grey;
+  color: white;
+  background-color: teal;
   overflow: hidden;
+  grid-column: 1 / -1;
   input {
     width: 100%;
     margin-bottom: 10px;
