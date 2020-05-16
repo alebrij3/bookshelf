@@ -10,7 +10,6 @@ class Layout extends React.Component {
         <Hero />
         <Search />
         {this.props.children}
-        <AddBook />
       </div>
     );
   }

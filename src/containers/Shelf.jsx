@@ -1,6 +1,7 @@
 import React from 'react';
 import Book from '../components/Book';
 import '../assets/styles/containers/Shelf.scss';
+import AddBook from '../components/AddBook';
 
 class Shelf extends React.Component {
   render() {
@@ -10,6 +11,7 @@ class Shelf extends React.Component {
         {allBooks.map(item =>
           <Book key={item.id} {...item} />
         )}
+        <AddBook />
       </div>
     );
   }
