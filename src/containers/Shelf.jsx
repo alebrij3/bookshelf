@@ -57,7 +57,6 @@ class Shelf extends React.Component {
     console.log('form submitted');
   }
   render() {
-    const { allBooks, nowReading, read, wantToRead } = this.props;
     let books = this.state.books;
     return (
       <>
