@@ -11,8 +11,8 @@ class Search extends React.Component {
           <label htmlFor="book-status">Filter by status</label>
           <select name="status" id="book-status" onChange={this.props.handleChange}>
             <option value="all">All books</option>
-            <option value="want-to-read">Want to Read</option>
-            <option value="now-reading">Now Reading</option>
+            <option value="wantToRead">Want to Read</option>
+            <option value="nowReading">Now Reading</option>
             <option value="read">Read</option>
           </select>
         </form>

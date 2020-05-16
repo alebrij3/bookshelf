@@ -18,20 +18,33 @@ class Shelf extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
   handleChange(e) {
-    function filterItems(arr, query) {
-      return arr.filter(book => book.title.toLowerCase().indexOf(query.toLowerCase()) !== -1);
-    }
-    if (e.target.value !== '') {
-      let searchResults = filterItems(this.props.allBooks, e.target.value);
-      this.setState({
-        isSearching: true,
-        books: searchResults,
-      })
-    } else {
-      this.setState({
-        isSearching: false,
-        books: this.props.allBooks,
-      })
+    if (e.target.name === 'search-query') {
+      function filterItems(arr, query) {
+        return arr.filter(book => book.title.toLowerCase().indexOf(query.toLowerCase()) !== -1);
+      }
+      if (e.target.value !== '') {
+        let searchResults = filterItems(this.props.allBooks, e.target.value);
+        this.setState({
+          isSearching: true,
+          books: searchResults,
+        })
+      } else {
+        this.setState({
+          isSearching: false,
+          books: this.props.allBooks,
+        })
+      }
+    } else if (e.target.name === 'status') {
+      if (e.target.value === 'all') {
+        this.setState({
+          books: this.props.allBooks,
+        });
+      } else {
+        let filterResults = this.props.allBooks.filter(book => book.status === e.target.value);
+        this.setState({
+          books: filterResults,
+        });
+      }
     }
   }
   handleSubmit(e) {
@@ -63,7 +76,6 @@ class Shelf extends React.Component {
             <Book key={item.id} {...item} />
           )}
           <AddBook handleSubmit={this.handleSubmit} />
-          {console.log(this.state)}
         </div>
       </>
     );
