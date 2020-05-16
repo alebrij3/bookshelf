@@ -54,7 +54,9 @@ class Shelf extends React.Component {
       cover: target.cover.value
     }
     this.props.allBooks.push(newBook);
-    console.log('form submitted');
+    this.setState({
+      books: this.props.allBooks,
+    })
   }
   render() {
     let books = this.state.books;
