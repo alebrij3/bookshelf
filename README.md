@@ -5,10 +5,19 @@ Here you will find:
 * Books I want to read
 * My book wishlist
 
-[comment]: # (bells and whistles - features of the app)
-
 ## Why a bookshelf?
 I love reading and have books everywhere, and there are many books that have caught my eye and this app is intended to keep track of all of them in one place.
+
+## Features
+
+### Search
+Book titles are searchable and the results show up as you type.
+
+### Add Books
+Books can be added to the Shelf
+
+### Filter Books
+Books can be shown by "Want to read" or "Now Reading" or "Read"
 
 ## Tech Stack
 
