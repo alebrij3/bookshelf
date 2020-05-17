@@ -13,10 +13,10 @@ I love reading and have books everywhere, and there are many books that have cau
 ## Tech Stack
 
 <div align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" width="auto" height="100px" alt="html5 logo" />
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" width="auto" height="100px" alt="css3 logo" />
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" width="auto" height="100px" alt="sass logo" />
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" width="auto" height="100px" alt="react logo" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" width="auto" height="80px" alt="html5 logo" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" width="auto" height="80px" alt="css3 logo" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" width="auto" height="80px" alt="sass logo" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" width="auto" height="80px" alt="react logo" />
 </div>
 
 ## Project preview
