@@ -252,7 +252,7 @@ const initialState = {
       "title": "Moonwalking With Einstein",
       "author": "Joshua Foer",
       "format": "ebook",
-      "status": "wantToRead",
+      "status": "nowReading",
       "rating": "",
       "dateStart": "",
       "dateEnd": "",
