@@ -308,7 +308,7 @@ const initialState = {
     },
     {
       "id": 21,
-      "cover": "https://i.postimg.cc/YC5Bt7td/image.jpg",
+      "cover": "https://i.postimg.cc/d0hRjMdc/image.jpg",
       "title": "El caso de los gusanos eléctricos",
       "author": "David Requesens",
       "format": "audiobook",
