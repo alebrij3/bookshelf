@@ -31,6 +31,9 @@ class AddBook extends React.Component {
         <input id="author" name="author" type="text"/>
         <label htmlFor="cover">Book Cover URL</label>
         <input id="cover" name="cover" type="text"/>
+        <div className="error">
+          <p>Title and author can't be empty.</p>
+        </div>
         <input type="submit" value="Agregar Libro"/>
       </form>
     );
