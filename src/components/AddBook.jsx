@@ -2,25 +2,10 @@ import React from 'react';
 import '../assets/styles/components/AddBook.scss';
 
 class AddBook extends React.Component {
-  /* constructor(props) {
+  constructor(props) {
     super(props);
-    this.state = {
-      "title": '',
-      "author": '',
-      "cover": '',
-    };
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
-  handleSubmit(e) {
-    e.preventDefault();
-    const target = e.target;
-    this.setState({
-      title: target.title.value,
-      author: target.author.value,
-      cover: target.cover.value
-    });
-    console.log('form submitted');
-  } */
+
   render() {
     
     return (
